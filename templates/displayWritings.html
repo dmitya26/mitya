@@ -1,0 +1,14 @@
+<!-- I called this "display writings", but it actually is more like a table of contents. -->
+<html>
+	<head></head>
+	<body>
+		<a href="/">Go home...</a>
+		<h1>Writings</h1>
+		<hr>
+		{% block content %}
+			{% for i in bookData %}
+				<a href="/writing/{{i[1]}}">{{i[0]}}</a><br><br>
+			{% endfor %}
+		{% endblock %}
+	</body>
+</html>
