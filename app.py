@@ -16,7 +16,11 @@ def writings(titleSeperatedWithHyphens):
     title = " ".join(titleSeperatedWithHyphens.split("-"))
     date=""
     body=""
+<<<<<<< HEAD
     with open("book.json") as f:
+=======
+    with open("/root/mitya/book.json") as f:
+>>>>>>> a81af69 (sdlkfjsdlk)
         data = json.load(f)
         date=data[titleSeperatedWithHyphens]["date"]
         body=data[titleSeperatedWithHyphens]["body"]
@@ -26,7 +30,11 @@ def writings(titleSeperatedWithHyphens):
 @app.route("/all-writings")
 def allWritings():
     bookData = []
+<<<<<<< HEAD
     with open("book.json") as f:
+=======
+    with open("/root/mitya/book.json") as f:
+>>>>>>> a81af69 (sdlkfjsdlk)
         data = json.load(f)
         for k in data.keys():
             title = " ".join(k.split("-"))
@@ -47,4 +55,8 @@ def contact():
     return render_template("contact.html")
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     app.run(debug=True, port=8080, host="localhost")
+=======
+    app.run(debug=False, port="8080", host="localhost")
+>>>>>>> a81af69 (sdlkfjsdlk)
