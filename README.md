@@ -1,2 +1,2 @@
 # mitya
-my personal website.
+my personal website/portfolio.
